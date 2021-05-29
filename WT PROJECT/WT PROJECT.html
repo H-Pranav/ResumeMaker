@@ -1,0 +1,138 @@
+<html>
+<head>
+<style>
+.d1{
+border:solid;
+border-radius:25px;
+margin-left:200;
+border-color: rgba(111,111,111,0);
+margin-right:200;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.d2{
+border:solid;
+border-radius:25px;
+margin-left:200;
+margin-right:200;
+border-color: rgba(111,111,111,0);
+background-color:#0066ff;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  
+}
+.d3{
+border:solid;
+border-radius:25px;
+border-color: rgba(111,111,111,0);
+margin-left:200;
+margin-right:200;
+background-color:#EEF2F7;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+}
+.b1{
+border-radius:25px;
+margin-left:200;
+margin-right:200;
+background-color:#0066ff;
+color:white;
+font-size:20px;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  font-family: 'Trebuchet MS', sans-serif
+}
+.req{
+color:red;
+}
+.i{
+border-radius:15px;
+}
+</style>
+</head>
+<body style="background-color:#0066ff;color:white;font-family: 'Trebuchet MS', sans-serif">
+<form action=Resume.php method='POST'>
+<center><h1><u>Make Your Resume</u></h1><br><br>
+<div class="d3">
+<h2><u style="color:#0066ff">Enter The Details</u></h2>
+<div class="d2">
+<h2><u>Personal Details</u></h2><br><br>
+<table>
+<tr>
+<td>Name:<span class="req">*</span></td><td><input class="i" type="text" placeholder=" Name" name="NAME" required></input></td>
+</tr>
+<tr> 
+<td>Age:<span class="req">*</span></td><td><input class="i" type="number" placeholder=" eg.23" name="AGE" required></input></td>
+</tr>
+<tr>
+<td>Contact Number:<span class="req">*</span></td><td><input class="i" type="tel" placeholder=" 8888888888" pattern="[0-9]{10}" name="CN" required></input></td>
+</tr>
+<tr>
+<td>E-mail:<span class="req">*</span></td><td><input class="i" type="email" placeholder=" jhon@example.com" name="EM" required></input></td>
+</tr>
+</table><br><br>
+</div>
+<br><br>
+<div class="d2">
+<h2><u>Education</u><h2><br><br>
+<table>
+<tr>
+<td>Studied At:<span class="req">*</span></td><td><input class="i" type="text" placeholder=" VIT-AP University" name="SA" required></input></td>
+</tr>
+<tr>
+<tr>
+<td><u>Duration</u></td><td></td>
+</tr>
+<td>Start:<span class="req">*</span></td><td><input class="i"  type="Date" name="SD" required></input></td><td>End:<span class="req">*</span></td><td><input class="i" type="Date" name="ED" required></input></td>
+</tr>
+<tr>
+<td>Qulification:<span class="req">*</span></td><td><input class="i" type="text" placeholder=" eg.Ph.D,B.Tech,M.Tech,." name="QUL" required></input></td>
+</tr> 
+<tr>
+<td>Description About Your<br> Education If Any:</td><td><textarea class="i"rows=5 cols=30 name="DAE"></textarea></td>
+</tr>
+</table>
+</div><br><br>
+<div class="d2">
+<h2><u>Skills</u></h2><br><br>
+<table>
+<tr>
+<td>Specify Your Skills:</td><td><textarea class="i" rows=10 cols=30 placeholder=" Specify None if no skills" name="SYS" required></textarea></td>
+</tr>
+</table><br><br>
+</div><br><br>
+<div class="d2">
+<h2><u>Work Experince</u></h2><br><br>
+<table>
+<tr>
+<td>Specify Your Work Experince if Any:</td><td><textarea class="i" rows=10 cols=30 placeholder=" if not Specify None" name="WE" required></textarea></td>
+</tr>
+</table><br><br>
+</div><br><br>
+<button class="b1" type="Submit">Make Resume</button><br><br>
+</div>
+</form>
+</center>
+</body>
+</html>
